@@ -4,7 +4,7 @@ It is code for post of https://kimbring2.github.io/2020/01/06/al5d.html. Purpose
 # Requirements
 1. AL5D with BotBoarduino
 2. USB webcam
-3. Python package : pyserial, matplotlib, keras, etc..
+3. Python package : pyserial, matplotlib, keras, opencv etc..
 4. Pretrained model for depth estimation : You can a 'nyu.h5' file download link at https://github.com/ialhashim/DenseDepth.
 5. It is good having a GPU in your computer. Because, I check monocular depth estimation process can require little GPU power for fast process.  
 
