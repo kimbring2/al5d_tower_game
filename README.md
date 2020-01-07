@@ -17,4 +17,4 @@ It is code for post of https://kimbring2.github.io/2020/01/06/al5d.html. Purpose
 
 # Work Plan
 1. Making a basic RL environment where state, action, reward, done is existed for training
-2. Implementing Model-Based RL algorithm for rolling a dice without virtual simulation 
+2. Implementing Model-Based RL algorithm for grasping a block without virtual simulation 
