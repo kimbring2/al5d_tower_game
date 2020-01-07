@@ -4,6 +4,20 @@ import argparse
 import matplotlib
 import cv2 
 import numpy as np
+import serial
+
+# For communication with Botboduino of AL5D
+ser = serial.Serial('/dev/ttyUSB0')
+#ser.write(b'w') # Base up action
+#ser.write(b's') # Base down action
+#ser.write(b'a') # Shldr up action
+#ser.write(b'd') # Shldr down action
+#ser.write(b'e') # Elb up action
+#ser.write(b'q') # Elb down action
+#ser.write(b'r') # Wrist up action
+#ser.write(b't') # Wrist down action
+#ser.write(b'z') # Gripper open action
+#ser.write(b'x') # Gripper close action
 
 # Keras / TensorFlow
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '5'
