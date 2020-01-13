@@ -11,8 +11,10 @@ It is code for post of https://kimbring2.github.io/2020/01/06/al5d.html. Purpose
 
 # Usage
 1. Upload a 'AL5d_code.ino' to your BotBoarduino
-2. Run a 'AL5D_code.py' in your terminal
-3. Look a 'inspect_tower_data.ipynb' and 'inspect_tower_model.ipynb' 
+2. Type a 'python AL5D_code.py' for controlling robot and watching Webcam image in your terminal
+3. Open a 'inspect_tower_data.ipynb' and run it for checking dataset
+4. Type a 'python3 tower.py train --dataset=/path/to/tower/dataset --weights=coco' for traning model
+5. Open a 'inspect_tower_data.ipynb' and run it for checking trained model
 
 # Trouble Shooting
 1. USB port permission : sudo chmod a+rw /dev/ttyUSB0
