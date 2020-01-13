@@ -7,12 +7,12 @@ It is code for post of https://kimbring2.github.io/2020/01/06/al5d.html. Purpose
 3. Python package : pyserial, matplotlib, keras, opencv etc..
 4. Pretrained model for depth estimation : You can a 'nyu.h5' file download link at https://github.com/ialhashim/DenseDepth.
 5. It is good having a GPU in your computer. Because, I check monocular depth estimation process can require little GPU power for fast process.  
-6. I use a Mask R-CNN at https://github.com/matterport/Mask_RCNN. Please install a requirement by checking that repository.
+6. I use a Mask R-CNN for detection and segmentaion of tower game object of https://github.com/matterport/Mask_RCNN. Please install a requirement of that repository.
 
 # Usage
 1. Upload a 'AL5d_code.ino' to your BotBoarduino
 2. Run a 'AL5D_code.py' in your terminal
-3. Look a 'inspect_tower_data.ipynb'
+3. Look a 'inspect_tower_data.ipynb' and 'inspect_tower_model.ipynb' 
 
 # Trouble Shooting
 1. USB port permission : sudo chmod a+rw /dev/ttyUSB0
