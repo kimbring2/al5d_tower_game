@@ -16,9 +16,8 @@ import colorsys
 import numpy as np
 from skimage.measure import find_contours
 import matplotlib.pyplot as plt
-from matplotlib import patches,  lines
+from matplotlib import patches, lines
 from matplotlib.patches import Polygon
-import IPython.display
 
 # Root directory of the project
 ROOT_DIR = os.path.abspath("../")
@@ -27,6 +26,7 @@ ROOT_DIR = os.path.abspath("../")
 sys.path.append(ROOT_DIR)  # To find local version of the library
 from mrcnn import utils
 
+import cv2
 
 ############################################################
 #  Visualization
@@ -82,7 +82,7 @@ def apply_mask(image, mask, color, alpha=0.5):
 
 def display_instances(image, boxes, masks, class_ids, class_names,
                       scores=None, title="",
-                      figsize=(16, 16), ax=None,
+                      figsize=(10, 10), ax=None,
                       show_mask=True, show_bbox=True,
                       colors=None, captions=None):
     """
@@ -106,9 +106,9 @@ def display_instances(image, boxes, masks, class_ids, class_names,
 
     # If no axis is passed, create one and automatically call show()
     auto_show = False
-    if not ax:
-        _, ax = plt.subplots(1, figsize=figsize)
-        auto_show = True
+    #if not ax:
+    figure, ax = plt.subplots(1, figsize=figsize)
+    auto_show = True
 
     # Generate random colors
     colors = colors or random_colors(N)
@@ -128,6 +128,7 @@ def display_instances(image, boxes, masks, class_ids, class_names,
         if not np.any(boxes[i]):
             # Skip this instance. Has no bbox. Likely lost in image cropping.
             continue
+
         y1, x1, y2, x2 = boxes[i]
         if show_bbox:
             p = patches.Rectangle((x1, y1), x2 - x1, y2 - y1, linewidth=2,
@@ -143,6 +144,7 @@ def display_instances(image, boxes, masks, class_ids, class_names,
             caption = "{} {:.3f}".format(label, score) if score else label
         else:
             caption = captions[i]
+
         ax.text(x1, y1 + 8, caption,
                 color='w', size=11, backgroundcolor="none")
 
@@ -162,9 +164,17 @@ def display_instances(image, boxes, masks, class_ids, class_names,
             verts = np.fliplr(verts) - 1
             p = Polygon(verts, facecolor="none", edgecolor=color)
             ax.add_patch(p)
+
     ax.imshow(masked_image.astype(np.uint8))
-    if auto_show:
-        plt.show()
+    figure.canvas.draw()
+
+    # Now we can save it to a numpy array.  
+    data = np.fromstring(figure.canvas.tostring_rgb(), dtype=np.uint8, sep='')
+    data = data.reshape(figure.canvas.get_width_height()[::-1] + (3,))
+    #print("data.shape: " + str(data.shape))
+    cv2.imshow("data", data)
+    #if auto_show:
+    #    plt.show()
 
 
 def display_differences(image,
