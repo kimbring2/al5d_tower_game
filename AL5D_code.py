@@ -6,6 +6,14 @@ import cv2
 import numpy as np
 import serial
 
+import tensorflow as tf
+from mrcnn import utils
+from mrcnn import visualize
+from mrcnn.visualize import display_images
+import mrcnn.model as modellib
+from mrcnn.model import log
+from samples.tower import tower
+
 # For communication with Botboduino of AL5D
 ser = serial.Serial('/dev/ttyUSB0')
 #ser.write(b'w') # Base up action
@@ -38,9 +46,53 @@ custom_objects = {'BilinearUpSampling2D': BilinearUpSampling2D, 'depth_loss_func
 print('Loading model...')
 
 # Load model into GPU / CPU
-model = load_model(args.model, custom_objects=custom_objects, compile=False)
+model_depth = load_model(args.model, custom_objects=custom_objects, compile=False)
 
 print('\nModel loaded ({0}).'.format(args.model))
+
+config_rcnn = tower.TowerConfig()
+class InferenceConfig(config_rcnn.__class__):
+    # Run detection on one image at a time
+    GPU_COUNT = 1
+    IMAGES_PER_GPU = 1
+
+def get_ax(rows=1, cols=1, size=16):
+    """Return a Matplotlib Axes array to be used in
+    all visualizations in the notebook. Provide a
+    central point to control graph sizes.
+    
+    Adjust the size attribute to control how big to render images
+    """
+    _, ax = plt.subplots(rows, cols, figsize=(size*cols, size*rows))
+    return ax
+
+depth_config = InferenceConfig()
+
+DEVICE = "/gpu:0"  # /cpu:0 or /gpu:0
+TEST_MODE = "inference"
+RCNN_MODEL_DIR = "/home/kimbring2/DenseDepth/main/mask_rcnn_tower.h5"
+
+with tf.device(DEVICE):
+    model_rcnn = modellib.MaskRCNN(mode="inference", model_dir=RCNN_MODEL_DIR,
+                              config=depth_config)
+
+#weights_path = model.find_last()
+
+tower_config = tower.TowerConfig()
+TOWER_DIR = "/home/kimbring2/DenseDepth/main/tower"
+
+# Load validation dataset
+dataset = tower.TowerDataset()
+dataset.load_tower(TOWER_DIR, "val")
+
+# Must call before using the dataset
+dataset.prepare()
+
+print("Images: {}\nClasses: {}".format(len(dataset.image_ids), dataset.class_names))
+
+# Load weights
+print("Loading weights ", RCNN_MODEL_DIR)
+model_rcnn.load_weights(RCNN_MODEL_DIR, by_name=True)
 
 key = cv2.waitKey(1)
 webcam = cv2.VideoCapture(0)
@@ -51,6 +103,7 @@ while True:
 	#print(frame) #prints matrix values of each framecd
 	#print("frame.shape: " + str(frame.shape)) 
 	#cv2.imshow("Capturing", frame)
+	frame_rcnn = frame
 	key = cv2.waitKey(1)
 
 	# Input images
@@ -60,26 +113,36 @@ while True:
 	frame = [frame]
 	inputs = np.array(frame)
 	#cv2.imshow("inputs", inputs)
-	#print("inputs: " + str(inputs)) 
+	#print("inputs.shape: " + str(inputs.shape)) 
 	
 	#print('\nLoaded ({0}) images of size {1}.'.format(inputs.shape[0], inputs.shape[1:]))
 
+	# Run object detection
+	inputs_rcnn = [frame_rcnn]
+	results = model_rcnn.detect(inputs_rcnn, verbose=1)
+	#print("results: " + str(results))
+	
+	# Display results
+	ax = get_ax(1)
+	r = results[0]
+	visualize.display_instances(inputs_rcnn[0], r['rois'], r['masks'], r['class_ids'], 
+		                    dataset.class_names, r['scores'], ax=ax,
+		                    title="Predictions")
 	# Compute results
-	outputs = predict(model, inputs)
+	#outputs = predict(model_depth, inputs)
 
 	#matplotlib problem on ubuntu terminal fix
 	#matplotlib.use('TkAgg')   
 
 	#cv2.imshow("inputs[0]", inputs[0])
 	# Display results
-	viz = display_images(outputs.copy(), inputs.copy())
-	viz = viz.astype(np.float32)
-	viz = cv2.cvtColor(viz, cv2.COLOR_BGR2RGB)
+	#viz = display_images(outputs.copy(), inputs.copy())
+	#viz = viz.astype(np.float32)
+	#viz = cv2.cvtColor(viz, cv2.COLOR_BGR2RGB)
 	#print("viz.shape: " + str(viz.shape))
-	cv2.imshow("Result", viz)
+	#cv2.imshow("Result", viz)
 	#plt.figure(figsize=(10,5))
 	#plt.imshow(outputs[0])
 	#plt.imshow(viz)
 	#plt.savefig('test.png')
 	#plt.show()
-	
