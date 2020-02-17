@@ -36,6 +36,7 @@ const float B = 7.375;
 #define Elbow_pin 4
 #define Wrist_pin 10
 #define Gripper_pin 11
+#define WristR_pin 12
 
 //Onboard Speaker
 #define Speaker_pin 5
@@ -52,12 +53,13 @@ Servo Elb;
 Servo Shldr;
 Servo Wrist;
 Servo Base;
+Servo WristR;
 Servo Gripper;
 
 //boolean mode = true;
 
 //Here's all the Inverse Kinematics to control the arm
-int Arm_angle(int base_angle, int shldr_angle, int elb_angle, int wrist_angle, int gripper_angle) 
+int Arm_angle(int base_angle, int shldr_angle, int elb_angle, int wrist_angle, int gripper_angle, int wrist_rotata_angle) 
 {
   
 #ifdef DIGITAL_RANGE
@@ -69,6 +71,7 @@ int Arm_angle(int base_angle, int shldr_angle, int elb_angle, int wrist_angle, i
 #endif
   Wrist.write(wrist_angle);
   Base.write(base_angle);
+  WristR.write(wrist_rotata_angle);
   
   Gripper.write(180 - gripper_angle);
 
@@ -83,14 +86,16 @@ void setup()
   Elb.attach(Elbow_pin);
   Wrist.attach(Wrist_pin);
   Gripper.attach(Gripper_pin);
-  Arm_angle(0, 0, 0, 0, 0);
+  WristR.attach(WristR_pin);
+  Arm_angle(0, 0, 0, 0, 0, 0);
 }
 
-int angleBase = 120;
-int angleShldr = 100;
+int angleBase = 60;
+int angleShldr = 135;
 int angleElb = 10;
 int angleWrist = 90;
 int angleGripper = 120;
+int angleWristRotate = 0;
 long lastReferenceTime;
 unsigned char action;
 
@@ -109,9 +114,12 @@ unsigned char action;
 #define actionGripperUp 122              // z
 #define actionGripperDown 120            // x
 
+#define actionWristRotCW 103             // g
+#define actionWristRotCCW 102            // f
+
 void loop()
 {
-  Arm_angle(angleBase, angleShldr, angleElb, angleWrist, angleGripper);
+  Arm_angle(angleBase, angleShldr, angleElb, angleWrist, angleGripper, angleWristRotate);
 
   lastReferenceTime = millis();
   while(millis() <= (lastReferenceTime + 100)){};
@@ -126,45 +134,52 @@ void loop()
       switch(action)
       {
         case actionBaseUp:
-        angleBase += 5;
+        angleBase += 2;
         break;
 
         case actionBaseDown:
-        angleBase -= 5;
+        angleBase -= 2;
         break;
         
         case actionShldrUp:
-        angleShldr += 5;
+        angleShldr += 2;
         break;
 
         case actionShldrDown:
-        angleShldr -= 5;
+        angleShldr -= 2;
         break;
         
         case actionElbUp:
-        angleElb += 5;
+        angleElb += 2;
         break;
 
         case actionElbDown:
-        angleElb -= 5;
+        angleElb -= 2;
         break;
         
         case actionWristUp:
-        angleWrist += 5;
+        angleWrist += 2;
         break;
 
         case actionWristDown:
-        angleWrist -= 5;
+        angleWrist -= 2;
         break;
         
         case actionGripperUp:
-        angleGripper += 5;
+        angleGripper += 2;
         break;
 
         case actionGripperDown:
-        angleGripper -= 5;
+        angleGripper -= 2;
         break;
-       
+
+        case actionWristRotCW:
+        angleWristRotate += 2;
+        break;
+        
+        case actionWristRotCCW:
+        angleWristRotate -= 2;
+        break;
       }
       
       // Display position
@@ -173,11 +188,12 @@ void loop()
       Serial.print("angleElb = "); Serial.print(angleElb, DEC); Serial.println(); 
       Serial.print("angleWrist = "); Serial.print(angleWrist, DEC); Serial.println(); 
       Serial.print("angleGripper = "); Serial.print(angleGripper, DEC); Serial.println();
+      Serial.print("angleWristRotate = "); Serial.print(angleWristRotate, DEC); Serial.println();
       Serial.println();
       
       // Move arm
       //Arm(tmpx, tmpy, tmpz, tmpg, tmpwa, tmpwr);
-      Arm_angle(angleBase, angleShldr, angleElb, angleWrist, angleGripper);
+      Arm_angle(angleBase, angleShldr, angleElb, angleWrist, angleGripper, angleWristRotate);
       
       // Pause for 100 ms between actions
       lastReferenceTime = millis();
