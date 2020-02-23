@@ -7,11 +7,18 @@ import numpy as np
 import serial
 
 import tensorflow as tf
-from mrcnn import utils
-from mrcnn import visualize
-from mrcnn.visualize import display_images
-import mrcnn.model as modellib
-from mrcnn.model import log
+
+
+#from mrcnn import utils
+import mrcnn.utils as mrcnn_utils
+
+#from mrcnn import visualize
+#from mrcnn.visualize import display_images
+import mrcnn.visualize as mrcnn_visualize
+import mrcnn.model as mrcnn_modellib
+from mrcnn.model import log as mrcnn_log
+#import mrcnn.model.log as mrcnn_log
+
 from samples.tower import tower
 
 # For communication with Botboduino of AL5D
@@ -37,7 +44,7 @@ from matplotlib import pyplot as plt
 
 # Argument Parser
 parser = argparse.ArgumentParser(description='High Quality Monocular Depth Estimation via Transfer Learning')
-parser.add_argument('--model', default='nyu.h5', type=str, help='Trained Keras model file.')
+parser.add_argument('--model', default='/home/kimbring2/nyu.h5', type=str, help='Trained Keras model file.')
 parser.add_argument('--input', default='examples/*.png', type=str, help='Input filename or folder.')
 args = parser.parse_args()
 
@@ -74,7 +81,7 @@ TEST_MODE = "inference"
 RCNN_MODEL_DIR = "/home/kimbring2/DenseDepth/main/mask_rcnn_tower.h5"
 
 with tf.device(DEVICE):
-    model_rcnn = modellib.MaskRCNN(mode="inference", model_dir=RCNN_MODEL_DIR,
+    model_rcnn = mrcnn_modellib.MaskRCNN(mode="inference", model_dir=RCNN_MODEL_DIR,
                               config=depth_config)
 
 #weights_path = model.find_last()
@@ -126,7 +133,7 @@ while True:
 	# Display results
 	ax = get_ax(1)
 	r = results[0]
-	visualize.display_instances(inputs_rcnn[0], r['rois'], r['masks'], r['class_ids'], 
+	mrcnn_visualize.display_instances(inputs_rcnn[0], r['rois'], r['masks'], r['class_ids'], 
 		                    	dataset.class_names, r['scores'], ax=ax,
 		                    	title="Predictions")
 	# Compute results
