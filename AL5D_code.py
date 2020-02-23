@@ -31,7 +31,8 @@ ser = serial.Serial('/dev/ttyUSB0')
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '5'
 from keras.models import load_model
 from layers import BilinearUpSampling2D
-from utils import predict, load_images, display_images
+import depth_utils
+#from utils import predict, load_images, display_images
 from matplotlib import pyplot as plt
 
 # Argument Parser
@@ -126,21 +127,21 @@ while True:
 	ax = get_ax(1)
 	r = results[0]
 	visualize.display_instances(inputs_rcnn[0], r['rois'], r['masks'], r['class_ids'], 
-		                    dataset.class_names, r['scores'], ax=ax,
-		                    title="Predictions")
+		                    	dataset.class_names, r['scores'], ax=ax,
+		                    	title="Predictions")
 	# Compute results
-	#outputs = predict(model_depth, inputs)
+	outputs = depth_utils.predict(model_depth, inputs)
 
 	#matplotlib problem on ubuntu terminal fix
 	#matplotlib.use('TkAgg')   
 
 	#cv2.imshow("inputs[0]", inputs[0])
 	# Display results
-	#viz = display_images(outputs.copy(), inputs.copy())
-	#viz = viz.astype(np.float32)
-	#viz = cv2.cvtColor(viz, cv2.COLOR_BGR2RGB)
+	viz = depth_utils.display_images(outputs.copy(), inputs.copy())
+	viz = viz.astype(np.float32)
+	viz = cv2.cvtColor(viz, cv2.COLOR_BGR2RGB)
 	#print("viz.shape: " + str(viz.shape))
-	#cv2.imshow("Result", viz)
+	cv2.imshow("Result", viz)
 	#plt.figure(figsize=(10,5))
 	#plt.imshow(outputs[0])
 	#plt.imshow(viz)
