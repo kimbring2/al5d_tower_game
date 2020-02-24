@@ -31,7 +31,6 @@ import cv2
 ############################################################
 #  Visualization
 ############################################################
-
 def display_images(images, titles=None, cols=4, cmap=None, norm=None,
                    interpolation=None):
     """Display the given set of images, optionally with titles.
@@ -82,7 +81,7 @@ def apply_mask(image, mask, color, alpha=0.5):
 
 def display_instances(image, boxes, masks, class_ids, class_names,
                       scores=None, title="",
-                      figsize=(10, 10), ax=None,
+                      figsize=(5, 3), ax=None,
                       show_mask=True, show_bbox=True,
                       colors=None, captions=None):
     """
@@ -172,7 +171,9 @@ def display_instances(image, boxes, masks, class_ids, class_names,
     data = np.fromstring(figure.canvas.tostring_rgb(), dtype=np.uint8, sep='')
     data = data.reshape(figure.canvas.get_width_height()[::-1] + (3,))
     #print("data.shape: " + str(data.shape))
-    cv2.imshow("data", data)
+    #cv2.imshow("data", data)
+
+    return data
     #if auto_show:
     #    plt.show()
 
