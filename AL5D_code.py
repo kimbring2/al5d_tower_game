@@ -76,7 +76,7 @@ depth_config = InferenceConfig()
 
 DEVICE = "/gpu:0"  # /cpu:0 or /gpu:0
 TEST_MODE = "inference"
-RCNN_MODEL_DIR = "home/kimbring2/Mask_RCNN/mask_rcnn_tower.h5"
+RCNN_MODEL_DIR = "/home/kimbring2/Mask_RCNN/mask_rcnn_tower.h5"
 
 with tf.device(DEVICE):
     model_rcnn = mrcnn_modellib.MaskRCNN(mode="inference", model_dir=RCNN_MODEL_DIR,
