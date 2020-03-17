@@ -67,7 +67,7 @@ class TowerConfig(Config):
     IMAGES_PER_GPU = 2
 
     # Number of classes (including background)
-    NUM_CLASSES = 1 + 1 + 1 + 1  # Background + block + dice + base
+    NUM_CLASSES = 1 + 1 + 1 + 1 + 1  # Background + block + dice + base
 
     # Number of training steps per epoch
     STEPS_PER_EPOCH = 100
@@ -91,6 +91,7 @@ class TowerDataset(utils.Dataset):
         self.add_class("tower", 1, "block")
         self.add_class("tower", 2, "dice")
         self.add_class("tower", 3, "base")
+        self.add_class("tower", 4, "gripper")
         
         # Train or validation dataset?
         assert subset in ["train", "val"]
