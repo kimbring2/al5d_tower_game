@@ -8,7 +8,7 @@ It is code for post of https://kimbring2.github.io/2020/01/06/al5d.html. Purpose
 4. Pretrained model for depth estimation : You can a 'nyu.h5' file download link at https://github.com/ialhashim/DenseDepth.
 5. It is good having a GPU in your computer. Because, I check monocular depth estimation process can require little GPU power for fast process.  
 6. Mask R-CNN model is used for detection and segmentaion of game object. You need to install install a requirement at https://github.com/matterport/Mask_RCNN for using model.
-7. Mask R-CNN pretrined model for tower game object : https://drive.google.com/open?id=1IPUHQdlMZwtIHkCuH5I3SMtnYkCClWvb
+7. Mask R-CNN pretrined model for tower game object : https://drive.google.com/open?id=1E3HDHNtAkjyU6-MXkeuRPpsYplS3EHok
 
 # Usage
 1. Upload a 'AL5d_code.ino' to your BotBoarduino : you can control a each motor of robot arm using a Arduino terminal command or PS2 controller
