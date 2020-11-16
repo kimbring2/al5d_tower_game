@@ -1,0 +1,84 @@
+{
+  "name": "zed_camera",
+  "modules": [
+    "perception",
+    "zed",
+    "imu"
+  ],
+  "config": {
+    "zed": {
+      "zed_camera": {
+        "tick_period": "60Hz",
+        "resolution": "1280x720",
+        "enable_imu": true
+      },
+      "zed_imu_reader": {
+        "tick_period": "300Hz"
+      }
+    },
+    "websight": {
+      "WebsightServer": {
+        "port": 3000,
+        "ui_config": {
+          "windows": {
+            "Right Camera": {
+              "renderer": "2d",
+              "channels": [
+                {
+                  "name": "zed_camera/zed/zed_camera/right_rgb_thumbnail"
+                }
+              ]
+            },
+            "Left Camera": {
+              "renderer": "2d",
+              "channels": [
+                {
+                  "name": "zed_camera/zed/zed_camera/left_rgb_thumbnail"
+                }
+              ]
+            },
+            "Depth Camera": {
+              "renderer": "2d",
+              "channels": [
+                {
+                  "name": "zed_camera/zed/zed_camera/depth_thumbnail"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "graph": {
+    "nodes": [
+      {
+        "name": "zed",
+        "components": [
+          {
+            "name": "message_ledger",
+            "type": "isaac::alice::MessageLedger"
+          },
+          {
+            "name": "zed_camera",
+            "type": "isaac::ZedCamera"
+          },
+          {
+            "name": "zed_imu_reader",
+            "type": "isaac::zed::ZedImuReader"
+          },
+          {
+            "name": "imu_corrector",
+            "type": "isaac::imu::ImuCorrector"
+          }
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "zed/zed_imu_reader/imu_raw",
+        "target": "zed/imu_corrector/raw"
+      }
+    ]
+  }
+}
