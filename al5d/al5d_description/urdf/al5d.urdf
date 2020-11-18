@@ -1,0 +1,1476 @@
+<robot name="onshape">
+<link name="hitec_hs-485hb_1">
+<collision>
+<origin xyz="0.176446 0.0619253 -0.182701" rpy="-0.00814886 -0.0127551 3.09641" />
+<geometry>
+<mesh filename="package://part_5.stl"/>
+</geometry>
+<material name="part_5_material">
+<color rgba="0.792157 0.819608 0.933333 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.176446 0.0619253 -0.182701" rpy="-0.00814886 -0.0127551 3.09641" />
+<geometry>
+<mesh filename="package://servomotore_hitec_hs485-hb.stl"/>
+</geometry>
+<material name="servomotore_hitec_hs485-hb_material">
+<color rgba="0.792157 0.819608 0.933333 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.176446 0.0619253 -0.182701" rpy="-0.00814886 -0.0127551 3.09641" />
+<geometry>
+<mesh filename="package://part_4.stl"/>
+</geometry>
+<material name="part_4_material">
+<color rgba="0.792157 0.819608 0.933333 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.176446 0.0619253 -0.182701" rpy="-0.00814886 -0.0127551 3.09641" />
+<geometry>
+<mesh filename="package://part_3.stl"/>
+</geometry>
+<material name="part_3_material">
+<color rgba="0.792157 0.819608 0.933333 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.132014 -0.00594739 -0.144999" rpy="1.56265 -0.0127551 3.09641" />
+<geometry>
+<mesh filename="package://ingranaggio_dentato_innesto_servomotore.stl"/>
+</geometry>
+<material name="ingranaggio_dentato_innesto_servomotore_material">
+<color rgba="0.792157 0.819608 0.933333 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://hitec_hs-485hb_1.stl"/>
+</geometry>
+<material name="hitec_hs-485hb_1_material">
+<color rgba="nan nan nan 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<link name="imported1_1">
+<collision>
+<origin xyz="0 -0.043307 8.67362e-19" rpy="-1.3598e-18 2.72348e-19 -1.34712e-18" />
+<geometry>
+<mesh filename="package://imported1.stl"/>
+</geometry>
+<material name="imported1_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://imported1_1.stl"/>
+</geometry>
+<material name="imported1_1_material">
+<color rgba="nan nan nan 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<link name="ssc-32_1">
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.980392 0.713725 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.647059 0.647059 0.647059 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.136056 0.0675587 -0.181168" rpy="0.00889874 -0.00232342 1.49686" />
+<geometry>
+<mesh filename="package://imported36.stl"/>
+</geometry>
+<material name="imported36_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.768627 0.886275 0.952941 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.980392 0.713725 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.768627 0.886275 0.952941 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.768627 0.886275 0.952941 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.498039 0.498039 0.498039 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.498039 0.498039 0.498039 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.647059 0.647059 0.647059 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.231373 0.380392 0.705882 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.647059 0.647059 0.647059 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.498039 0.498039 0.498039 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.647059 0.647059 0.647059 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.768627 0.886275 0.952941 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.647059 0.647059 0.647059 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.980392 0.713725 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.980392 0.713725 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.980392 0.713725 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.498039 0.498039 0.498039 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.498039 0.498039 0.498039 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.231373 0.380392 0.705882 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.980392 0.713725 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.768627 0.886275 0.952941 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.647059 0.647059 0.647059 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.768627 0.886275 0.952941 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.980392 0.713725 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.647059 0.647059 0.647059 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.647059 0.647059 0.647059 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.768627 0.886275 0.952941 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.498039 0.498039 0.498039 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.231373 0.380392 0.705882 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.980392 0.713725 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.231373 0.380392 0.705882 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.647059 0.647059 0.647059 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.498039 0.498039 0.498039 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.647059 0.647059 0.647059 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.498039 0.498039 0.498039 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.498039 0.498039 0.498039 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.768627 0.886275 0.952941 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.980392 0.713725 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.980392 0.713725 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.498039 0.498039 0.498039 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.231373 0.380392 0.705882 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.231373 0.380392 0.705882 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.980392 0.713725 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.647059 0.647059 0.647059 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.231373 0.380392 0.705882 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.498039 0.498039 0.498039 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.768627 0.886275 0.952941 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.231373 0.380392 0.705882 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.498039 0.498039 0.498039 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.498039 0.498039 0.498039 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.131549 -0.00561969 -0.182589" rpy="1.57896 0.0127448 -0.0439262" />
+<geometry>
+<mesh filename="package://imported1.stl"/>
+</geometry>
+<material name="imported1_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.231373 0.380392 0.705882 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.768627 0.886275 0.952941 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.647059 0.647059 0.647059 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.980392 0.713725 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.980392 0.713725 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.231373 0.380392 0.705882 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.980392 0.713725 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.980392 0.713725 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.980392 0.713725 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.980392 0.713725 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.768627 0.886275 0.952941 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.647059 0.647059 0.647059 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.498039 0.498039 0.498039 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.498039 0.498039 0.498039 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.768627 0.886275 0.952941 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.768627 0.886275 0.952941 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.647059 0.647059 0.647059 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.231373 0.380392 0.705882 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.231373 0.380392 0.705882 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.498039 0.498039 0.498039 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.231373 0.380392 0.705882 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.768627 0.886275 0.952941 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.498039 0.498039 0.498039 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.231373 0.380392 0.705882 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.498039 0.498039 0.498039 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.231373 0.380392 0.705882 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.231373 0.380392 0.705882 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.768627 0.886275 0.952941 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.768627 0.886275 0.952941 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.647059 0.647059 0.647059 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.980392 0.713725 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.980392 0.713725 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.231373 0.380392 0.705882 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.498039 0.498039 0.498039 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.647059 0.647059 0.647059 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.768627 0.886275 0.952941 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.768627 0.886275 0.952941 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.647059 0.647059 0.647059 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.647059 0.647059 0.647059 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.231373 0.380392 0.705882 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.647059 0.647059 0.647059 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0.135248 0.083341 -0.179614" rpy="1.56847 -0.00889872 3.06768" />
+<geometry>
+<mesh filename="package://ssc-32.stl"/>
+</geometry>
+<material name="ssc-32_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://ssc-32_1.stl"/>
+</geometry>
+<material name="ssc-32_1_material">
+<color rgba="nan nan nan 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<joint name="017135eb-a098-43c9-b74d-6145d7f3a6c9_fixing" type="fixed">
+<origin xyz="-0.133985 0.136797 -0.00131468" rpy="-1.57897 0.0440288 0.0123855" />
+<parent link="imported1_1" />
+<child link="ssc-32_1" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="1" type="revolute">
+<origin xyz="0.132094 -0.00600405 -0.1385" rpy="1.57896 0.0127448 -0.0439262" />
+<parent link="hitec_hs-485hb_1" />
+<child link="imported1_1" />
+<axis xyz="0 1 0"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+
+</robot>

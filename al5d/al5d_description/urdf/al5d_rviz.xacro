@@ -1,0 +1,558 @@
+<?xml version="1.0"?>
+<robot name="onshape" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <!-- Used for fixing jetbot_soccer to Gazebo 'base_link' -->
+    <link name="world" />
+    <joint name="world_joint" type="fixed">
+      <parent link="world"/>
+      <child link="assembly_3_1"/>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+    </joint>
+
+	<link name="assembly_3_1">
+		<collision>
+			<origin xyz="-0.00970271 -0.0434987 0.100418" rpy="0.037808 1.24896 0.180399" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/imported6.stl"/>
+			</geometry>
+			<material name="imported6_material">
+				<color rgba="0.647059 0.647059 0.647059 1.0"/>
+			</material>
+		</collision>
+		<collision>
+			<origin xyz="-0.0644966 -0.0884144 0.0797579" rpy="-1.24918 0.0119563 -1.42627" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/imported4.stl"/>
+			</geometry>
+			<material name="imported4_material">
+				<color rgba="0.231373 0.380392 0.705882 1.0"/>
+			</material>
+		</collision>
+		<collision>
+			<origin xyz="-0.0749532 -0.0165706 0.0806259" rpy="-1.24918 0.0119563 -1.42627" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/imported5.stl"/>
+			</geometry>
+			<material name="imported5_material">
+				<color rgba="0.980392 0.713725 0.00392157 1.0"/>
+			</material>
+		</collision>
+		<collision>
+			<origin xyz="0.064324 -0.00303524 0.126312" rpy="-2.68503 -0.0119563 1.71533" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/imported5.stl"/>
+			</geometry>
+			<material name="imported5_material">
+				<color rgba="0.980392 0.713725 0.00392157 1.0"/>
+			</material>
+		</collision>
+		<collision>
+			<origin xyz="-0.00195659 -0.00857929 0.0920755" rpy="1.53299 -1.24896 -2.96119" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/asb203.stl"/>
+			</geometry>
+			<material name="asb203_material">
+				<color rgba="0.615686 0.811765 0.929412 1.0"/>
+			</material>
+		</collision>
+		<collision>
+			<origin xyz="0.0721877 -0.0639893 0.126053" rpy="-0.037808 -1.24896 -2.96119" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/imported8.stl"/>
+			</geometry>
+			<material name="imported8_material">
+				<color rgba="0.231373 0.380392 0.705882 1.0"/>
+			</material>
+		</collision>
+		<visual>
+			<origin xyz="0 0 0" rpy="0 -0 0" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/assembly_3_1.stl"/>
+			</geometry>
+			<material name="assembly_3_1_material">
+				<color rgba="0.549634 0.627756 0.687007 1.0"/>
+			</material>
+		</visual>
+		<inertial>
+			<origin xyz="-0.0150037 -0.0519635 0.098131" rpy="0 0 0"/>
+			<mass value="0.210521" />
+			<inertia ixx="0.000316475" ixy="-0.000161476"  ixz="-0.000134923" iyy="0.000638896" iyz="-6.90695e-05" izz="0.000738837" />
+		</inertial>
+	</link>
+	<link name="assembly_6_1">
+		<collision>
+			<origin xyz="0.014478 -0.014986 -0.061214" rpy="-1.01359e-18 4.12165e-17 -2.99908e-19" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/hs-805bb.stl"/>
+			</geometry>
+			<material name="hs-805bb_material">
+				<color rgba="0.909804 0.909804 0.909804 1.0"/>
+			</material>
+		</collision>
+		<collision>
+			<origin xyz="0.02269 -0.00174611 -0.036506" rpy="1.5708 -1.5708 0" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/imported2.stl"/>
+			</geometry>
+			<material name="imported2_material">
+				<color rgba="0.768627 0.886275 0.952941 1.0"/>
+			</material>
+		</collision>
+		<collision>
+			<origin xyz="-0.0118691 0.07126 -0.0250047" rpy="-3.14159 -1.5708 0" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/imported1.stl"/>
+			</geometry>
+			<material name="imported1_material">
+				<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+			</material>
+		</collision>
+		<visual>
+			<origin xyz="0 0 0" rpy="0 -0 0" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/assembly_6_1.stl"/>
+			</geometry>
+			<material name="assembly_6_1_material">
+				<color rgba="0.908985 0.833727 0.73777 1.0"/>
+			</material>
+		</visual>
+		<inertial>
+			<origin xyz="-0.0168348 0.00637191 -0.0316393" rpy="0 0 0"/>
+			<mass value="1.2783" />
+			<inertia ixx="0.000710801" ixy="-3.77805e-05"  ixz="-2.19578e-05" iyy="0.000934011" iyz="-2.81715e-05" izz="0.000742463" />
+		</inertial>
+	</link>
+	<link name="assembly_1_1">
+		<collision>
+			<origin xyz="-0.0417983 -0.04424 0.0695052" rpy="-1.5708 1.49702e-19 2.03954e-20" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/servomotore_hitec_hs485-hb.stl"/>
+			</geometry>
+			<material name="servomotore_hitec_hs485-hb_material">
+				<color rgba="0.792157 0.819608 0.933333 1.0"/>
+			</material>
+		</collision>
+		<collision>
+			<origin xyz="-0.0417983 -0.04424 0.0695052" rpy="-1.5708 1.49702e-19 2.03954e-20" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/part_3.stl"/>
+			</geometry>
+			<material name="part_3_material">
+				<color rgba="0.792157 0.819608 0.933333 1.0"/>
+			</material>
+		</collision>
+		<collision>
+			<origin xyz="-3.53884e-16 -0.0465764 -3.60822e-16" rpy="3.14159 3.16747e-17 -3.14159" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/imported1.stl"/>
+			</geometry>
+			<material name="imported1_material">
+				<color rgba="0.917647 0.917647 0.917647 1.0"/>
+			</material>
+		</collision>
+		<collision>
+			<origin xyz="-3.46945e-16 -0.0480764 -3.747e-16" rpy="-1.5708 -3.15605e-16 1.67908e-15" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/imported36.stl"/>
+			</geometry>
+			<material name="imported36_material">
+				<color rgba="0.917647 0.917647 0.917647 1.0"/>
+			</material>
+		</collision>
+		<collision>
+			<origin xyz="-0.0417983 -0.04424 0.0695052" rpy="-1.5708 1.49702e-19 2.03954e-20" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/part_5.stl"/>
+			</geometry>
+			<material name="part_5_material">
+				<color rgba="0.792157 0.819608 0.933333 1.0"/>
+			</material>
+		</collision>
+		<collision>
+			<origin xyz="-0.0417983 -0.04424 0.0695052" rpy="-1.5708 1.49702e-19 2.03954e-20" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/part_4.stl"/>
+			</geometry>
+			<material name="part_4_material">
+				<color rgba="0.792157 0.819608 0.933333 1.0"/>
+			</material>
+		</collision>
+		<collision>
+			<origin xyz="0 -0.0065 6.93889e-18" rpy="2.67186e-19 1.49702e-19 2.03954e-20" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/ingranaggio_dentato_innesto_servomotore.stl"/>
+			</geometry>
+			<material name="ingranaggio_dentato_innesto_servomotore_material">
+				<color rgba="0.792157 0.819608 0.933333 1.0"/>
+			</material>
+		</collision>
+		<visual>
+			<origin xyz="0 0 0" rpy="0 -0 0" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/assembly_1_1.stl"/>
+			</geometry>
+			<material name="assembly_1_1_material">
+				<color rgba="0.911705 0.913005 0.91839 1.0"/>
+			</material>
+		</visual>
+		<inertial>
+			<origin xyz="-1.5858e-09 -0.0297923 0.000615095" rpy="0 0 0"/>
+			<mass value="0.659246" />
+			<inertia ixx="0.000713864" ixy="1.69853e-12"  ixz="-4.43256e-10" iyy="0.00111945" iyz="-3.08952e-06" izz="0.000808412" />
+		</inertial>
+	</link>
+	<joint name="1" type="revolute">
+		<origin xyz="-0.0118691 0.027953 -0.0250047" rpy="3.14159 0.13886 1.14374e-14" />
+		<parent link="assembly_6_1" />
+		<child link="assembly_1_1" />
+		<axis xyz="0 1 0"/>
+		<limit lower="-1e+16" upper="1e+16" effort="1.5" velocity="50" />
+		<joint_properties friction="0.0"/>
+	</joint>
+	<joint name="2" type="revolute">
+		<origin xyz="-0.0654471 -0.0818837 0.0798368" rpy="-1.58275 0.00610405 -2.99713" />
+		<parent link="assembly_3_1" />
+		<child link="assembly_6_1" />
+		<axis xyz="0 0 1"/>
+		<limit lower="-1e+16" upper="1e+16" effort="1.5" velocity="50" />
+		<joint_properties friction="0.0"/>
+	</joint>
+	<link name="assembly_4_1">
+		<collision>
+			<origin xyz="0.0213487 0.13989 -0.0292906" rpy="-3.14159 3.10483e-16 -1.5708" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/imported11.stl"/>
+			</geometry>
+			<material name="imported11_material">
+				<color rgba="0.231373 0.380392 0.705882 1.0"/>
+			</material>
+		</collision>
+		<collision>
+			<origin xyz="0.0046269 0.179546 -0.00573332" rpy="1.5708 -1.70534e-15 1.91212" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/imported8.stl"/>
+			</geometry>
+			<material name="imported8_material">
+				<color rgba="0.231373 0.380392 0.705882 1.0"/>
+			</material>
+		</collision>
+		<collision>
+			<origin xyz="0.0047879 0.180784 -0.0530904" rpy="1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/imported30.stl"/>
+			</geometry>
+			<material name="imported30_material">
+				<color rgba="0.231373 0.380392 0.705882 1.0"/>
+			</material>
+		</collision>
+		<collision>
+			<origin xyz="0 -0.0168782 -0.03075" rpy="2.0724e-17 5.71442e-18 -1.8296e-17" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/imported10.stl"/>
+			</geometry>
+			<material name="imported10_material">
+				<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+			</material>
+		</collision>
+		<collision>
+			<origin xyz="0.0190627 0.0209676 -0.0584498" rpy="-3.14159 -1.78017e-15 -1.5708" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/asb201b.stl"/>
+			</geometry>
+			<material name="asb201b_material">
+				<color rgba="0.498039 0.498039 0.498039 1.0"/>
+			</material>
+		</collision>
+		<collision>
+			<origin xyz="0.0060325 0.0240029 -0.0292906" rpy="-1.5708 -1.5708 0" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/at-03.stl"/>
+			</geometry>
+			<material name="at-03_material">
+				<color rgba="0.768627 0.886275 0.952941 1.0"/>
+			</material>
+		</collision>
+		<collision>
+			<origin xyz="0.0060325 0.0208279 -0.0292906" rpy="-1.74658e-16 -1.5708 0" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/hub-08.stl"/>
+			</geometry>
+			<material name="hub-08_material">
+				<color rgba="0.917647 0.917647 0.917647 1.0"/>
+			</material>
+		</collision>
+		<collision>
+			<origin xyz="-0.00553287 0.150019 -0.0451801" rpy="1.1343e-15 -1.5708 0" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/imported15.stl"/>
+			</geometry>
+			<material name="imported15_material">
+				<color rgba="0.611765 0.811765 0.921569 1.0"/>
+			</material>
+		</collision>
+		<collision>
+			<origin xyz="0.0213487 0.0224154 -0.0292906" rpy="-8.69099e-16 1.70699e-15 1.5708" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/imported11.stl"/>
+			</geometry>
+			<material name="imported11_material">
+				<color rgba="0.231373 0.380392 0.705882 1.0"/>
+			</material>
+		</collision>
+		<collision>
+			<origin xyz="0.0190627 0.170853 -0.0347135" rpy="-3.14159 1.55571e-15 -1.5708" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/asb-04.stl"/>
+			</geometry>
+			<material name="asb-04_material">
+				<color rgba="0.647059 0.647059 0.647059 1.0"/>
+			</material>
+		</collision>
+		<collision>
+			<origin xyz="0.0060325 0.141478 -0.0292906" rpy="3.14159 -1.5708 0" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/hub-08.stl"/>
+			</geometry>
+			<material name="hub-08_material">
+				<color rgba="0.917647 0.917647 0.917647 1.0"/>
+			</material>
+		</collision>
+		<visual>
+			<origin xyz="0 0 0" rpy="0 -0 0" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/assembly_4_1.stl"/>
+			</geometry>
+			<material name="assembly_4_1_material">
+				<color rgba="0.821471 0.601159 0.31861 1.0"/>
+			</material>
+		</visual>
+		<inertial>
+			<origin xyz="0.00284781 0.0374925 -0.0302223" rpy="0 0 0"/>
+			<mass value="1.12468" />
+			<inertia ixx="0.00798767" ixy="-0.000215075"  ixz="6.35996e-06" iyy="0.000327641" iyz="4.23528e-06" izz="0.00789937" />
+		</inertial>
+	</link>
+	<link name="assembly_5_1">
+		<collision>
+			<origin xyz="-0.0230885 0.04456 0.0157932" rpy="-1.22947 -5.19829e-16 1.19771e-15" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/servo.stl"/>
+			</geometry>
+			<material name="servo_material">
+				<color rgba="0.25098 0.25098 0.25098 1.0"/>
+			</material>
+		</collision>
+		<collision>
+			<origin xyz="-0.0230999 0.0464333 0.0164945" rpy="1.91212 -4.72276e-16 1.14121e-15" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/part_1.stl"/>
+			</geometry>
+			<material name="part_1_material">
+				<color rgba="0.501961 0.501961 0.501961 1.0"/>
+			</material>
+		</collision>
+		<collision>
+			<origin xyz="-0.0380746 -0.0295275 0.01016" rpy="-9.03578e-17 -1.04066e-17 2.21669e-17" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/imported15.stl"/>
+			</geometry>
+			<material name="imported15_material">
+				<color rgba="0.917647 0.917647 0.917647 1.0"/>
+			</material>
+		</collision>
+		<collision>
+			<origin xyz="-0.0468298 -2.77556e-17 0" rpy="-1.22947 -1.98045e-16 9.22379e-16" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/bb-03.stl"/>
+			</geometry>
+			<material name="bb-03_material">
+				<color rgba="0.647059 0.647059 0.647059 1.0"/>
+			</material>
+		</collision>
+		<collision>
+			<origin xyz="-0.0468298 -2.77556e-17 0" rpy="-1.91212 5.17518e-16 -3.14159" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/imported30.stl"/>
+			</geometry>
+			<material name="imported30_material">
+				<color rgba="0.231373 0.380392 0.705882 1.0"/>
+			</material>
+		</collision>
+		<visual>
+			<origin xyz="0 0 0" rpy="0 -0 0" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/assembly_5_1.stl"/>
+			</geometry>
+			<material name="assembly_5_1_material">
+				<color rgba="0.436028 0.436736 0.438282 1.0"/>
+			</material>
+		</visual>
+		<inertial>
+			<origin xyz="-0.0236898 0.0273106 0.00969118" rpy="0 0 0"/>
+			<mass value="0.0622741" />
+			<inertia ixx="2.36411e-05" ixy="-8.35154e-07"  ixz="-2.73512e-07" iyy="3.20599e-05" iyz="3.08587e-06" izz="4.61916e-05" />
+		</inertial>
+	</link>
+	<link name="assembly_10_1">
+		<collision>
+			<origin xyz="-1.11022e-16 -0.0064008 -0.004327" rpy="8.06484e-17 1.5708 0" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/gripper_wrist.stl"/>
+			</geometry>
+			<material name="gripper_wrist_material">
+				<color rgba="0.768627 0.886275 0.952941 1.0"/>
+			</material>
+		</collision>
+		<collision>
+			<origin xyz="0.0103124 -7.62e-05 -0.0163031" rpy="3.14159 4.73318e-17 -2.78614e-16" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/servo_body.stl"/>
+			</geometry>
+			<material name="servo_body_material">
+				<color rgba="0.25098 0.25098 0.25098 1.0"/>
+			</material>
+		</collision>
+		<collision>
+			<origin xyz="0.007495 -6.93889e-18 -0.01259" rpy="-1.20818e-17 7.21926e-19 -8.06484e-17" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/horn.stl"/>
+			</geometry>
+			<material name="horn_material">
+				<color rgba="0.917647 0.917647 0.917647 1.0"/>
+			</material>
+		</collision>
+		<visual>
+			<origin xyz="0 0 0" rpy="0 -0 0" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/assembly_10_1.stl"/>
+			</geometry>
+			<material name="assembly_10_1_material">
+				<color rgba="0.269207 0.273309 0.275633 1.0"/>
+			</material>
+		</visual>
+		<inertial>
+			<origin xyz="0.00975498 -0.01489 -0.0162576" rpy="0 0 0"/>
+			<mass value="0.237212" />
+			<inertia ixx="3.44357e-05" ixy="1.84502e-06"  ixz="1.05371e-07" iyy="4.39636e-05" iyz="-2.03982e-07" izz="6.26002e-05" />
+		</inertial>
+	</link>
+	<link name="assembly_11_1">
+		<collision>
+			<origin xyz="0 -2.08167e-17 0" rpy="-2.2938e-17 -6.04899e-17 -8.33845e-17" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/servo_output.stl"/>
+			</geometry>
+			<material name="servo_output_material">
+				<color rgba="0.960784 0.960784 0.960784 1.0"/>
+			</material>
+		</collision>
+		<collision>
+			<origin xyz="0 0.0090678 -2.77556e-17" rpy="1.5708 -1.5708 0" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/gripper_wheel.stl"/>
+			</geometry>
+			<material name="gripper_wheel_material">
+				<color rgba="0.647059 0.647059 0.647059 1.0"/>
+			</material>
+		</collision>
+		<collision>
+			<origin xyz="-0.00207963 0.0065278 0.0110353" rpy="-6.28781e-15 -0.839514 1.08255e-15" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/gripper_arm.stl"/>
+			</geometry>
+			<material name="gripper_arm_material">
+				<color rgba="0.980392 0.713725 0.00392157 1.0"/>
+			</material>
+		</collision>
+		<collision>
+			<origin xyz="0.0366356 0.0393579 -0.0258693" rpy="0.878038 3.19669e-15 1.5708" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/gripper_finger_pad.stl"/>
+			</geometry>
+			<material name="gripper_finger_pad_material">
+				<color rgba="0.615686 0.811765 0.929412 1.0"/>
+			</material>
+		</collision>
+		<collision>
+			<origin xyz="-0.00398455 0.0013716 -0.0214456" rpy="3.14159 0.878038 -2.10365e-14" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/gripper_finger_left.stl"/>
+			</geometry>
+			<material name="gripper_finger_left_material">
+				<color rgba="0.917647 0.917647 0.917647 1.0"/>
+			</material>
+		</collision>
+		<collision>
+			<origin xyz="0.00204002 0.0065278 -0.0110785" rpy="-3.14159 0.818534 -3.14159" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/gripper_arm.stl"/>
+			</geometry>
+			<material name="gripper_arm_material">
+				<color rgba="0.980392 0.713725 0.00392157 1.0"/>
+			</material>
+		</collision>
+		<collision>
+			<origin xyz="0.0218998 -0.0125984 3.80425e-05" rpy="-7.10629e-15 0.878038 -1.74389e-14" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/gripper_finger_right.stl"/>
+			</geometry>
+			<material name="gripper_finger_right_material">
+				<color rgba="0.498039 0.498039 0.498039 1.0"/>
+			</material>
+		</collision>
+		<collision>
+			<origin xyz="0.0163216 0.0393579 -0.0427296" rpy="0.878038 5.62952e-15 1.5708" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/gripper_finger_pad.stl"/>
+			</geometry>
+			<material name="gripper_finger_pad_material">
+				<color rgba="0.615686 0.811765 0.929412 1.0"/>
+			</material>
+		</collision>
+		<visual>
+			<origin xyz="0 0 0" rpy="0 -0 0" />
+			<geometry>
+				<mesh filename="file://$(find al5d_description)/urdf/al5d/assembly_11_1.stl"/>
+			</geometry>
+			<material name="assembly_11_1_material">
+				<color rgba="0.703614 0.739543 0.727873 1.0"/>
+			</material>
+		</visual>
+		<inertial>
+			<origin xyz="0.0118618 -0.00283175 -0.0142209" rpy="0 0 0"/>
+			<mass value="0.0121778" />
+			<inertia ixx="3.06366e-06" ixy="4.00391e-07"  ixz="-8.82966e-07" iyy="5.27605e-06" iyz="-3.41991e-07" izz="3.38592e-06" />
+		</inertial>
+	</link>
+	<joint name="6" type="revolute">
+		<origin xyz="-1.11022e-16 0.0054864 -0.0163031" rpy="5.06275e-15 0.692758 -3.47192e-15" />
+		<parent link="assembly_10_1" />
+		<child link="assembly_11_1" />
+		<axis xyz="0 1 0"/>
+		<limit lower="-1e+16" upper="1e+16" effort="1.5" velocity="50" />
+		<joint_properties friction="0.0"/>
+	</joint>
+	<joint name="5" type="revolute">
+		<origin xyz="-0.0305835 0.0536627 0.0190268" rpy="2.29434 1.0407 0.651214" />
+		<parent link="assembly_5_1" />
+		<child link="assembly_10_1" />
+		<axis xyz="0 0 1"/>
+		<limit lower="-1e+16" upper="1e+16" effort="1.5" velocity="50" />
+		<joint_properties friction="0.0"/>
+	</joint>
+	<joint name="4" type="revolute">
+		<origin xyz="0.0046269 0.179546 -0.00723332" rpy="-6.12549e-16 -1.5708 0" />
+		<parent link="assembly_4_1" />
+		<child link="assembly_5_1" />
+		<axis xyz="1 0 0"/>
+		<limit lower="-1e+16" upper="1e+16" effort="1.5" velocity="50" />
+		<joint_properties friction="0.0"/>
+	</joint>
+	<joint name="3" type="revolute">
+		<origin xyz="0.0719717 -0.062505 0.126071" rpy="1.59791 -1.11408 0.120194" />
+		<parent link="assembly_3_1" />
+		<child link="assembly_4_1" />
+		<axis xyz="0 0 1"/>
+		<limit lower="-1e+16" upper="1e+16" effort="1.5" velocity="50" />
+		<joint_properties friction="0.0"/>
+	</joint>
+</robot>

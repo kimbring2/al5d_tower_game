@@ -1,0 +1,9 @@
+{
+    "documentId": "e48286f6201d44255f9af8e7",
+    "assemblyName": "AL5D",
+    "outputFormat": "urdf",
+    "drawFrames": false,
+    "drawCollisions": false,
+    "useScads": true,
+    "mergeSTLs": true
+}
