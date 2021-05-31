@@ -1,0 +1,31 @@
+{
+  "name": "al5d",
+  "modules": [
+    "//packages/al5d:al5d_components"
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "name": "al5d",
+        "components": [
+          {
+            "name": "al5d",
+            "type": "isaac::Al5d"
+          },
+          {
+            "name": "message_ledger",
+            "type": "isaac::alice::MessageLedger"
+          }
+         ]
+      }
+    ]
+  },
+  "config": {
+    "al5d" : {
+      "al5d" : {
+      	"message": "My own al5d!",
+        "tick_period" : "1Hz"
+      }
+    }  
+  }
+}
