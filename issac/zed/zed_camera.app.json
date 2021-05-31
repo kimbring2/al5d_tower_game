@@ -1,0 +1,71 @@
+{
+  "name": "zed_camera",
+  "modules": [
+    "perception",
+    "zed",
+    "imu",
+    "sight"
+  ],
+  "config": {
+    "zed": {
+      "zed_camera": {
+        "camera_fps": 60,
+        "resolution": "1280x720",
+        "enable_imu": false
+      },
+      "zed_imu_reader": {
+        "tick_period": "300Hz"
+      }
+    },
+    "websight": {
+      "WebsightServer": {
+        "port": 3000,
+        "ui_config": {
+          "windows": {
+            "Right Camera": {
+              "renderer": "2d",
+              "channels": [
+                {
+                  "name": "zed_camera/zed/zed_camera/right_rgb_thumbnail"
+                }
+              ]
+            },
+            "Left Camera": {
+              "renderer": "2d",
+              "channels": [
+                {
+                  "name": "zed_camera/zed/zed_camera/left_rgb_thumbnail"
+                }
+              ]
+            },
+            "Depth Camera": {
+              "renderer": "2d",
+              "channels": [
+                {
+                  "name": "zed_camera/zed/zed_camera/depth_thumbnail"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "graph": {
+    "nodes": [
+      {
+        "name": "zed",
+        "components": [
+          {
+            "name": "message_ledger",
+            "type": "isaac::alice::MessageLedger"
+          },
+          {
+            "name": "zed_camera",
+            "type": "isaac::ZedCamera"
+          }
+        ]
+      }
+    ]
+  }
+}
