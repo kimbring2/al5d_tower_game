@@ -8,6 +8,14 @@
 #include <math.h>
 #include <PS2X_lib.h>
 
+#include <Wire.h>
+
+#include "SparkFun_VCNL4040_Arduino_Library.h" //Library: http://librarymanager/All#SparkFun_VCNL4040
+VCNL4040 proximitySensor;
+
+#include "SparkFun_LPS25HB_Arduino_Library.h"  //Library: http://librarymanager/All#SparkFun_LPS25HB
+LPS25HB pressureSensor;
+
 //comment to disable the Force Sensitive Resister on the gripper
 //#define FSRG
 
@@ -97,6 +105,22 @@ void setup()
 {
   Serial.begin(9600);
 
+  Wire.begin();
+  Wire.setClock(400000); //Increase I2C bus speed to 400kHz
+
+  if (proximitySensor.begin() == false)
+  {
+    Serial.println("Proximity sensor not found. Please check wiring.");
+    while (1); //Freeze!
+  }
+  
+  pressureSensor.begin();
+  if(pressureSensor.isConnected() == false)  // The library supports some different error codes such as "DISCONNECTED"
+  {
+    Serial.println("Pressure sensor not found. Please check wiring.");
+    while (1); //Freeze!
+  }
+
   error = ps2x.config_gamepad(CLK,CMD,ATT,DAT, true, true);   //setup pins and settings:  GamePad(clock, command, attention, data, Pressures?, Rumble?) check for error
   if(error == 0)
     Serial.println("Found Controller, configured successful");
@@ -159,6 +183,21 @@ unsigned char action;
 
 void loop()
 {
+  unsigned int proxValue = proximitySensor.getProximity(); 
+
+  float pressure = pressureSensor.getPressure_hPa();
+  float temp = pressureSensor.getTemperature_degC();
+
+  Serial.print("Proximity Value: ");
+  Serial.print(proxValue);
+
+  Serial.print(" Pressure in hPa: "); 
+  Serial.println(pressure);
+  //Serial.print(", Temperature (degC): "); 
+  //Serial.println(temp);
+
+  delay(10);
+
   ps2x.read_gamepad(); //update the ps2 controller
  
   int LSY = 128 - ps2x.Analog(PSS_LY);
